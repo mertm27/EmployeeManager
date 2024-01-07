@@ -41,7 +41,7 @@ const AddEmployee = () => {
         password: employee.password,
         address: employee.address,
         salary: employee.salary,
-        category_id: employee.category_id, // Corrected property name
+        category_id: employee.category_id, 
       })
       .then((result) => {
         if (result.data.Status) {

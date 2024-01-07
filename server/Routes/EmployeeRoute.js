@@ -10,7 +10,7 @@ router.post("/employee_login", (req, res) => {
   con.query(sql, [req.body.email], (err, result) => {
     if (err) return res.json({ loginStatus: false, Error: "Query error" });
     if (result.length > 0) {
-      if (req.body.password === result[0].password) { // Directly comparing the passwords
+      if (req.body.password === result[0].password) { 
           const email = result[0].email;
           const token = jwt.sign(
               { role: "employee", email: email, id: result[0].id },

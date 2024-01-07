@@ -35,7 +35,7 @@ const Category = () => {
         axios.put(`http://localhost:3000/auth/edit_category/${editCategory.id}`, { name: editCategory.name })
         .then(response => {
             setShowEditDialog(false);
-            fetchCategories(); // Refresh the list
+            fetchCategories(); 
         }).catch(error => console.log(error));
     };
 

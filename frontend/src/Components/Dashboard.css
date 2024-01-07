@@ -5,11 +5,9 @@
   
   .sidebar {
     width: 250px;
-    background-color: #3498db; /* Change to your desired color */
+    background-color: #3498db; 
     color: #fff;
     padding-top: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Rest of the styles remain the same */
   

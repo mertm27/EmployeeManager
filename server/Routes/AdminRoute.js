@@ -58,7 +58,7 @@ router.post('/add_employee', (req, res) => {
            
 })
 
-// image upload 
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, 'Public/Images')
@@ -70,10 +70,6 @@ const storage = multer.diskStorage({
 const upload = multer({
     storage: storage
 })
-// end imag eupload 
-
-
-
 
 
 router.put('/edit_category/:id', (req, res) => {
